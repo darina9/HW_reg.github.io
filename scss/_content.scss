@@ -1,0 +1,42 @@
+.content{
+    @extend %basicFlex;
+    background:$backgroundlight;
+    padding-left:calc(50% - 800px);
+    padding-right:calc(50% - 800px);
+
+        &_img{
+            width: 50%;
+        }
+
+        &_brand_name{
+            border-left: 12px solid $colorPink;
+            padding-left: 16px;
+            margin-top: 48%;
+        }
+
+        &_brand{
+            padding-left: 64px;
+        }
+
+        &_brand_text{
+            @include params(58px,48px,900,normal);
+            color:$colorDark;
+
+        }
+
+        &__brand_subtext{
+            @include params(38px,32px,700,normal);
+            color:$colorDark;
+        }
+       
+
+   }
+span{
+    color: $colorPink;
+}
+
+
+
+
+
+

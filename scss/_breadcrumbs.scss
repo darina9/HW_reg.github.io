@@ -1,0 +1,40 @@
+.breadcrumbs{
+    max-height: 148px;
+    background-color: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_container{
+        @include siteFlexBetween();
+
+    }
+}
+
+.breadcrumb_arrivals_name{
+    color: #F16D7F;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.breadcrumb_list_item{
+    display: inline-block;
+    vertical-align: top;
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 5px;
+    &:not(:last-child)::after {
+        content: "/";
+        margin-left: 5px;
+    }
+    &:last-child {
+        color: #F16D7F;
+        font-weight: 700;
+    }
+}
+
+   
+

@@ -1,0 +1,276 @@
+.cart{
+    margin-top: 96px;
+    display: flex;
+    gap: 128px;
+
+
+    &_products{
+        display: flex;
+        flex-direction: column;
+
+        &_add{
+            display: flex;
+            flex-direction: column;
+            width: 652px;
+            gap: 40px;
+            
+
+            &_item{
+                height: 306px;
+                display: flex;
+                box-shadow: 6px 4px 32px rgba(0, 0, 0, 0.21);
+
+
+                &_img{
+                    width: 262px;
+                }
+
+                &_text{
+                    padding-top: 22px;
+                    padding-left: 31px;
+                    
+                    
+
+                    &_title{
+                        display: flex;
+                        gap: 57px;
+                        padding-bottom: 42px;
+
+                        &_name{
+                            width: 262px;
+                        height: 58px;
+                        color: #222;                        
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        flex-wrap: wrap;
+                        }
+
+                        &_cross{
+                            padding-top: 6px;
+                            
+                            &:hover path{
+                                fill:#F16D7F;
+                            }
+                        
+
+                        
+                    }
+                }
+
+                &_info{
+                    color: #575757;
+                    font-family: Lato;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-bottom: 6px;
+
+
+                    &_input{
+                        width: 44px;
+                        height: 25px;
+                        border: 1px solid rgba(234, 234, 234, 1);
+                        color: #656565;                            
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        outline: none;
+                        text-align: center;
+                        
+                        
+                    }
+                }
+
+                   
+
+                   
+
+
+                
+            
+        }
+    }
+        }
+
+        &_btn{
+            margin-top: 72px;
+            display: flex;
+            justify-content: space-between;
+
+            &_action{
+                color: #000;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 17px 40px;
+                background-color: #fff;
+                border: 1px solid rgba(164, 164, 164, 1);
+                margin-bottom: 128px;
+
+                &:hover{
+                    background-color: #F16D7F;
+                    color: #FFF;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+
+    &_form{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+
+        &_adress{
+            
+
+            &_title{
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+           
+
+            &_input{
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+
+                &_item{                                    
+                    
+                    padding: 13px  15px 17px;
+                    border:1px solid rgba(164, 164, 164, 1);                   
+
+                    &_submit{
+                        box-sizing: border-box;
+                        width: 102px;
+                        background-color: #fff;
+                        border:1px solid rgba(164, 164, 164, 1);
+                        color: #4A4A4A;                      
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding: 10px 13px;
+
+                        &:hover{
+                            background-color: #F16D7F;
+                            color: #fff;
+                            transition-duration: 0.5s;
+                        }
+                    }
+                   
+
+                }
+                
+            }
+        }
+
+        &_btn{
+            
+            background-color: rgba(245, 243, 243, 1);
+
+            &_total{
+               
+                &_sub{                 
+
+
+                    color: #4A4A4A;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &_price{
+                        margin-left: 30px;
+                        color: #4A4A4A;
+                    }
+
+                    &_box{
+                        padding-top: 39px;
+                        padding-left: 218px;
+                        padding-bottom: 12px;
+                
+                    }
+
+                }
+
+                &_grand{
+                    color: #222;                    
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+
+                    &_price{
+                        padding-left: 30px;
+                    }
+
+                    &_box{
+                        padding-left: 153px;
+                        padding-bottom: 21px;
+                        
+                    }
+                }
+            }
+
+
+            &_checkout{
+                box-sizing: border-box;
+                border: 1px solid #F16D7F;
+                background-color: #F16D7F;
+                margin:  17px 43px 42px 44px;
+                padding: 15px 35px;
+                color: #FFF;               
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:hover{
+                    background-color: #fff;
+                    color: #F16D7F;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            &_line{
+                border: 1px solid #E2E2E2;                
+                margin:  0 43px;
+            }
+        }
+        
+    }
+}
+
+.input{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    
+}
+
+input.cart_form_adress_input_item::placeholder{
+    color:  #B1B1B1;;    
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+     
+                  
+}
+
+
+
+
+
+

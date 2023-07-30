@@ -1,0 +1,23 @@
+.header{
+    min-height: 75px;
+    background: $backgroundDark;
+    @include siteFlexBetween();
+
+        &_left{
+            @include siteFlex();
+	        gap: 41px;
+    }
+
+
+        &_right{
+            @include siteFlex();
+            gap: 33px;
+
+        }
+}
+
+
+
+
+
+

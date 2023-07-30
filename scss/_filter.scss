@@ -1,0 +1,156 @@
+.cat{
+    margin-top: 0;
+    
+}
+
+summary {
+    display: block;
+  }
+  
+    summary::-webkit-details-marker {
+    display: none;
+  }
+
+.filter_sort{
+    height: 132px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding-top: 39px;
+   
+    
+}
+
+
+
+.filter{    
+    padding-top: 13px;
+    width: 360px;
+    position: relative;    
+    box-sizing: border-box;
+    z-index: 10;
+
+    &_content{
+        background: #fff;
+        padding: 0 16px 16px 16px;
+       
+        
+    }
+
+
+    &[open]{
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+    }
+
+    &[open] .filter_heading{
+        color: $colorPink;       
+
+    }
+
+    &[open] path{
+        fill: $colorPink;
+    }
+
+    &_summary{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        
+
+    }
+
+    &_heading{
+        @include params(normal,14px,600,normal);
+        color:$colorDark;
+        
+       
+    }
+
+    &_item{
+        margin-top: 16px;
+    }
+
+    &_item[open] .filter_head{
+        color: $colorPink;
+    }
+
+    &_head{
+        @include params(normal,14px,400,normal);
+        color: #6F6E6E;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid rgba(235, 235, 235, 1);
+        border-left: 5px solid $colorPink;
+
+    }
+
+    &_link{
+        @include params(normal,14px,400,normal);
+        color: #6F6E6E;
+
+        &_box{
+            
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;           
+            
+            gap: 11px;
+        }
+
+    }
+
+    
+
+
+}
+
+.sort{       
+    padding-top: 12px;
+    display: flex;    
+    gap: 18px;
+    z-index: 1;
+
+    &_details{
+        position: relative;
+    }
+
+    &_summary{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_heading{
+        @include params(normal,14px,400,normal);
+        color: #6F6E6E;
+
+    }
+
+    &_box{
+        display: flex;
+        flex-direction: column;
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);        
+        padding: 7px 30px 11px 9px;
+        gap: 8px;        
+        position: absolute;
+        left: -9px;
+        top: 22px;
+
+
+       
+    }
+
+    &_check{
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        @include params(normal,14px,400,normal);
+        color: #6F6E6E;
+        
+
+    }
+   
+}

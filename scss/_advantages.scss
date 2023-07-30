@@ -1,0 +1,77 @@
+.advantages{
+    background-color:#222224 ;
+    min-height: 341px;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+
+    &_list{
+        @include siteFlex();
+        gap: 30px;
+        margin: 0 230px;
+    }
+
+    &_list_item{
+        margin: 104px auto 104px;
+        max-width: 360px;
+        width: 100%;
+        min-height: 134px;
+        @include siteFlexBetween();    
+        flex-direction: column;
+        
+    }
+
+    &_list_item_link{
+        display: block;
+    }
+
+    &_list_item_svg{
+        display: block;
+        fill: $colorPink;}
+
+    &_list_item_link:hover path{
+        fill: #9F9F9F;
+    }
+    
+    &_list_item_link:active path{
+        fill:$colorLight;
+    }
+
+    &_list_item_title{
+        @include params(24px,20px,400,normal);
+        color:#FBFBFB;
+        text-align: center;
+        display: block;      
+        
+    }
+
+    &_list_item_text{
+        @include params(normal,14px,300,normal);
+        display: block;
+        max-width: 320px;  
+        text-align: center;
+        color: #FBFBFB;
+        }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.advantages_list_item_text{
+    display: block;
+	max-width: 320px;
+	
+	font-weight: 300;
+	font-size: 13.972px;	
+	text-align: center;
+	color: #FBFBFB;
+	}
